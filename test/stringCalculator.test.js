@@ -16,4 +16,7 @@ describe("StringCalculator test", () => {
   it("should handle new lines between numbers instead of commas", () => {
     expect(StringCalculator("1\n2,3")).toBe(6);
   });
+  it("Support different delimiters", () => {
+    expect(StringCalculator("//;\n1;2")).toBe(3);
+  });
 });
