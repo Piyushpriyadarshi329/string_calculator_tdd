@@ -10,4 +10,7 @@ describe("StringCalculator test", () => {
   it("should return the sum of two numbers", () => {
     expect(StringCalculator("1,2")).toBe(3);
   });
+  it("should return the sum of multiple numbers", () => {
+    expect(StringCalculator("1,2,5,6")).toBe(14);
+  });
 });
