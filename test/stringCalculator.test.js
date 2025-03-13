@@ -1,3 +1,4 @@
+const { StringCalculator } = require("../src/StringCalculator");
 
 
 describe("StringCalculator test",()=>{
