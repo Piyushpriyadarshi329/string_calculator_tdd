@@ -22,4 +22,7 @@ describe("StringCalculator test", () => {
   it("Calling with a negative number will throw an exception", () => {
     expect(() => StringCalculator("1,-2,3")).toThrow('negatives not allowed: -2');
   });
+  it("Calling with a negative number will throw an exception", () => {
+    expect(() => StringCalculator("-1,-2,3")).toThrow('negatives not allowed: -1, -2');
+  });
 });
